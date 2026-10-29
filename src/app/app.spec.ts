@@ -21,4 +21,10 @@ describe('App', () => {
     const compiled = fixture.nativeElement as HTMLElement;
     expect(compiled.querySelector('h1')?.textContent).toContain('Hello, pro-doct');
   });
+
+  it('should match the snapshot', async () => {
+    const fixture = TestBed.createComponent(App);
+    await fixture.whenStable();
+    expect(fixture.nativeElement).toMatchSnapshot();
+  });
 });
