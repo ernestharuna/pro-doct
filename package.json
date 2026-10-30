@@ -7,7 +7,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:pro-doct": "node dist/pro-doct/server/server.mjs"
+    "serve:ssr:pro-doct": "node dist/pro-doct/server/server.mjs",
+    "lint": "ng lint",
+    "api:seed": "node mock-api/seed.mjs 5000",
+    "api": "json-server mock-api/db.json"
   },
   "private": true,
   "packageManager": "npm@11.19.1",
@@ -28,14 +31,21 @@
     "@angular/build": "^22.2.3",
     "@angular/cli": "^22.2.3",
     "@angular/compiler-cli": "^22.2.0",
+    "@eslint/js": "^10.0.1",
+    "@faker-js/faker": "10.6.0",
     "@tailwindcss/postcss": "^4.1.12",
     "@types/express": "^5.0.1",
     "@types/node": "^22.12.0",
+    "@vitest/coverage-v8": "^5.0.5",
+    "angular-eslint": "22.6.0",
+    "eslint": "^10.12.0",
     "jsdom": "^30.0.0",
+    "json-server": "1.0.0-beta.15",
     "postcss": "^8.5.3",
     "prettier": "^3.8.1",
     "tailwindcss": "^4.1.12",
     "typescript": "~6.0.2",
+    "typescript-eslint": "8.71.0",
     "vitest": "^5.0.0"
   }
 }
