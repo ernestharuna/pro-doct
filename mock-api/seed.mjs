@@ -1,4 +1,3 @@
-// usage: node mock-api/seed.mjs 5000
 import { faker } from '@faker-js/faker';
 import { writeFileSync } from 'node:fs';
 
