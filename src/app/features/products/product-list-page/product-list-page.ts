@@ -12,4 +12,5 @@ import { Component } from '@angular/core';
     
   `,
 })
-export class ProductListPage { }
+export class ProductListPage { 
+}
