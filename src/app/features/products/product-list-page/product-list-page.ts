@@ -3,7 +3,14 @@ import { Component } from '@angular/core';
 @Component({
   imports: [],
   selector: 'app-product-list-page',
-  styleUrl: './product-list-page.css',
-  templateUrl: './product-list-page.html',
+  template: `
+    <main>
+      <h2 class="font-semibold tracking-tight">
+        ⭐️ Trending Products
+      </h2>
+    </main>
+    
+  `,
 })
-export class ProductListPage {}
+export class ProductListPage { 
+}
